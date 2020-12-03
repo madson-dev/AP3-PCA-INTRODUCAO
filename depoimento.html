@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Conexão</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1*">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      $('.flexslider').flexslider({
+        prevText: "",
+        nextText: "",
+        pauseOnAction: false,
+        slideshowSpeed: 3000,
+        touch: true
+      });    
+    });
+  </script>
+
+</head>
+    <body>
+        
+        <div class="depoimento">    
+            <h1 class="tituloDepoimento">Deixe uma palavra de ânimo para o seu próximo</h1>
+            <textarea cols="70" rows="8" class= "depoimento" id="depoimento" placeholder="Digite seu depoimento"></textarea>
+            <div>
+                <button type="button" class="btndepoimento" onclick="criarDepoimento();">Postar Depoimento</button>
+            </div>
+            <div><a class="linkVoltar" href="index.html" style="color:black;">VOLTAR A PÁGINA ANTERIOR</a>
+            </div>
+        </div>
+            <script src="depoimento.js"></script>
+        
+                
+        <div class="parallax">
+            <h3 id="live">DEPOIMENTO</h3>  
+            <p id="text"></br>
+           </p>
+        </div>
+        <div class="textcontatos">
+            <h2><a href="https://www.inca.gov.br/como-parar-de-fumar" style="color:black;" >Como parar de fumar</a></h2>
+        </div>
+        <div class="contatos" id="contatos">
+            <li>
+                <a href="app.html" style="color:black;">APLICATIVOS QUE PODEM TE AJUDAR A PARAR DE FUMAR</a>
+            </li>          
+        </div>
+        
+        </div>
+    </body>
+</html>      
+    
